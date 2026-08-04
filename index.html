@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Vignesh S — Software Engineering & DevOps</title>
+  <meta name="description" content="Portfolio of Vignesh S, Software Engineering and DevOps enthusiast pursuing a B.Tech in Artificial Intelligence and Data Science." />
+  <link rel="icon" type="image/png" href="assets/profile.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <canvas id="cursorTrail"></canvas>
+
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="brand">
+        <span class="brand-dot"></span> Vignesh<span class="brand-accent">.S</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#hero">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#journey">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+          <span class="icon-sun">☀</span>
+          <span class="icon-moon">☾</span>
+        </button>
+        <a href="assets/Vignesh-Resume.pdf" class="btn btn-primary btn-sm" download>Resume</a>
+      </div>
+      <button id="menuToggle" class="menu-toggle" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="section hero">
+      <div class="hero-grid">
+        <div class="hero-text reveal">
+          <p class="eyebrow">Hey There, I'm</p>
+          <h1 class="hero-title">
+            <span class="gradient-text">Vignesh S</span>
+          </h1>
+          <h2 class="hero-roles"><span id="typed"></span><span class="caret"></span></h2>
+          <p class="hero-desc">
+            Software Engineering and DevOps enthusiast pursuing a B.Tech in Artificial Intelligence
+            and Data Science. Hands-on experience building scalable web applications, REST APIs, and
+            automation projects through internships, hackathons, and personal projects.
+          </p>
+          <div class="hero-actions">
+            <a href="assets/Vignesh-Resume.pdf" class="btn btn-primary" download>Resume</a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=svigneshvicky229@gmail.com&su=Thank%20You%20for%20Visiting%20My%20Portfolio&body=Hello%2C%0D%0A%0D%0AThank%20you%20for%20taking%20the%20time%20to%20visit%20my%20portfolio%20and%20learn%20more%20about%20my%20work.%20I%20truly%20appreciate%20your%20interest.%0D%0A%0D%0AIf%20you%20believe%20my%20skills%20and%20projects%20align%20with%20your%20team%27s%20requirements%2C%20I%20would%20be%20excited%20to%20discuss%20how%20I%20can%20contribute%20as%20a%20Software%20Engineer%2C%20Full%20Stack%20Developer%2C%20or%20DevOps%20Engineer.%0D%0A%0D%0AThank%20you%20once%20again%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20connecting%20with%20you.%0D%0A%0D%0ABest%20regards%2C%0D%0AVignesh%20S" target="_blank" rel="noopener" class="btn btn-outline">Hire Me</a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=svigneshvicky229@gmail.com&su=Thank%20You%20for%20Visiting%20My%20Portfolio&body=Hello%2C%0D%0A%0D%0AThank%20you%20for%20taking%20the%20time%20to%20visit%20my%20portfolio%20and%20learn%20more%20about%20my%20work.%20I%20truly%20appreciate%20your%20interest.%0D%0A%0D%0AIf%20you%20believe%20my%20skills%20and%20projects%20align%20with%20your%20team%27s%20requirements%2C%20I%20would%20be%20excited%20to%20discuss%20how%20I%20can%20contribute%20as%20a%20Software%20Engineer%2C%20Full%20Stack%20Developer%2C%20or%20DevOps%20Engineer.%0D%0A%0D%0AThank%20you%20once%20again%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20connecting%20with%20you.%0D%0A%0D%0ABest%20regards%2C%0D%0AVignesh%20S" target="_blank" rel="noopener" class="social-btn" title="Gmail">✉</a>
+            <a href="https://www.linkedin.com/in/vignesh-s-v22092005/" target="_blank" rel="noopener" class="social-btn" title="LinkedIn">in</a>
+            <a href="https://github.com/Vicky2-code" target="_blank" rel="noopener" class="social-btn" title="GitHub">
+              <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat"><strong data-count="10">0</strong><span>Languages & Frameworks</span></div>
+            <div class="stat"><strong data-count="13">0</strong><span>Tools & Technologies</span></div>
+            <div class="stat"><strong data-count="2">0</strong><span>Flagship Projects</span></div>
+          </div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="profile-card">
+            <div class="profile-ring">
+              <img src="assets/profile-1x1.png" alt="Vignesh S" class="profile-img" />
+            </div>
+            <div class="floating-chip chip-1">⚡ Full Stack</div>
+            <div class="floating-chip chip-2">☁️ DevOps & Cloud</div>
+            <div class="floating-chip chip-3">🐳 Docker</div>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint">↓ Scroll</a>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <p class="eyebrow reveal">About Me</p>
+        <h2 class="section-title reveal">Driven by <span class="gradient-text">reliable software</span> &amp; automation</h2>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm <strong>Vignesh S</strong> — a Software Engineering and DevOps enthusiast pursuing
+              a B.Tech in Artificial Intelligence and Data Science (Expected May 2027) at Dhirajlal
+              Gandhi College of Technology, Salem.
+            </p>
+            <p>
+              Strong foundation in <strong>Java, Python, JavaScript</strong>, Data Structures,
+              Algorithms, Linux, Git, Docker, and Cloud fundamentals. I'm passionate about developing
+              reliable software, automating deployments, and continuously learning modern technologies.
+            </p>
+            <p>
+              From internships to hackathons and personal projects, I focus on writing clean code,
+              automating everything that can be automated, and shipping scalable solutions that last.
+            </p>
+          </div>
+          <div class="about-metrics reveal">
+            <div class="metric-row"><span>REST API Development</span><span class="bar"><i style="--w:95%"></i></span></div>
+            <div class="metric-row"><span>Full Stack Development</span><span class="bar"><i style="--w:90%"></i></span></div>
+            <div class="metric-row"><span>Cloud & Automation</span><span class="bar"><i style="--w:88%"></i></span></div>
+            <div class="metric-row"><span>CI/CD & DevOps</span><span class="bar"><i style="--w:86%"></i></span></div>
+            <div class="metric-row"><span>Problem Solving & DSA</span><span class="bar"><i style="--w:85%"></i></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills">
+      <div class="container">
+        <p class="eyebrow reveal">My Tech Stack</p>
+        <h2 class="section-title reveal">Skills &amp; <span class="gradient-text">Technologies</span></h2>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">Programming Languages &amp; Frameworks</h3>
+          <div class="chip-grid">
+            <span class="chip">Java</span><span class="chip">Python</span><span class="chip">JavaScript</span>
+            <span class="chip">C++</span><span class="chip">Go</span><span class="chip">HTML5</span>
+            <span class="chip">CSS3</span><span class="chip">React.js</span><span class="chip">Node.js</span>
+            <span class="chip">Express.js</span><span class="chip">Flask</span><span class="chip">Spring Boot</span>
+            <span class="chip">Tailwind CSS</span><span class="chip">REST APIs</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">Tools &amp; Technologies</h3>
+          <div class="chip-grid">
+            <span class="chip">Linux</span><span class="chip">Git</span><span class="chip">GitHub</span>
+            <span class="chip">Docker</span><span class="chip">GitHub Actions</span><span class="chip">AWS (EC2, S3, IAM)</span>
+            <span class="chip">MySQL</span><span class="chip">MongoDB</span><span class="chip">Nginx</span>
+            <span class="chip">Jenkins</span><span class="chip">Postman</span><span class="chip">VS Code</span>
+            <span class="chip">Jupyter Notebook</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">Proficiency Levels</h3>
+          <div class="skill-levels">
+            <div class="skill-level" data-level="95"><span class="skill-name">Python</span><div class="skill-bar"><i></i></div><span class="skill-pct">0%</span></div>
+            <div class="skill-level" data-level="92"><span class="skill-name">Java</span><div class="skill-bar"><i></i></div><span class="skill-pct">0%</span></div>
+            <div class="skill-level" data-level="90"><span class="skill-name">JavaScript</span><div class="skill-bar"><i></i></div><span class="skill-pct">0%</span></div>
+            <div class="skill-level" data-level="88"><span class="skill-name">Docker</span><div class="skill-bar"><i></i></div><span class="skill-pct">0%</span></div>
+            <div class="skill-level" data-level="86"><span class="skill-name">Linux</span><div class="skill-bar"><i></i></div><span class="skill-pct">0%</span></div>
+            <div class="skill-level" data-level="85"><span class="skill-name">React.js</span><div class="skill-bar"><i></i></div><span class="skill-pct">0%</span></div>
+            <div class="skill-level" data-level="85"><span class="skill-name">Spring Boot</span><div class="skill-bar"><i></i></div><span class="skill-pct">0%</span></div>
+            <div class="skill-level" data-level="82"><span class="skill-name">AWS (EC2, S3, IAM)</span><div class="skill-bar"><i></i></div><span class="skill-pct">0%</span></div>
+            <div class="skill-level" data-level="80"><span class="skill-name">MySQL</span><div class="skill-bar"><i></i></div><span class="skill-pct">0%</span></div>
+            <div class="skill-level" data-level="78"><span class="skill-name">Git &amp; GitHub Actions</span><div class="skill-bar"><i></i></div><span class="skill-pct">0%</span></div>
+            <div class="skill-level" data-level="75"><span class="skill-name">MongoDB</span><div class="skill-bar"><i></i></div><span class="skill-pct">0%</span></div>
+            <div class="skill-level" data-level="75"><span class="skill-name">Nginx &amp; Jenkins</span><div class="skill-bar"><i></i></div><span class="skill-pct">0%</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section services">
+      <div class="container">
+        <p class="eyebrow reveal">Our services</p>
+        <h2 class="section-title reveal">My Core <span class="gradient-text">Expertise</span></h2>
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <span class="service-num">[001]</span>
+            <h3>Full Stack Development</h3>
+            <p>End-to-end web applications with React, Spring Boot, Node.js, and MongoDB — from pixel-perfect UI to robust REST APIs.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-num">[002]</span>
+            <h3>DevOps &amp; Cloud</h3>
+            <p>CI/CD pipelines with GitHub Actions and Jenkins, containerization with Docker, and AWS infrastructure designed for scale.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-num">[003]</span>
+            <h3>Backend Development</h3>
+            <p>Clean, secure, and high-performance server-side logic with Java, Python, and Node.js ecosystems.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-num">[004]</span>
+            <h3>Problem Solving</h3>
+            <p>Turning complex challenges into simple, elegant solutions with a strong Data Structures and Algorithms foundation.</p>
+          </article>
+        </div>
+
+        <p class="eyebrow reveal" style="margin-top:5rem">My Creative Toolkit</p>
+        <div class="toolkit reveal">
+          <span>Plan</span><span>Design</span><span>Develop</span><span>Test</span><span>Deploy</span><span>Monitor</span><span>Improve</span><span>Learn</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section works">
+      <div class="container">
+        <p class="eyebrow reveal">Featured Work</p>
+        <h2 class="section-title reveal">My <span class="gradient-text">Projects</span></h2>
+        <div class="works-grid">
+          <article class="work-card reveal">
+            <div class="work-top"><span class="work-tag">DevOps</span><span class="work-tag">Individual</span></div>
+            <h3>DevOps Cloud Automation Platform</h3>
+            <p>DevOps automation platform to streamline application setup, deployment, and infrastructure management using Linux shell scripting and Docker.</p>
+            <ul class="work-list">
+              <li>CI/CD pipelines with GitHub Actions automating build, test, and deployment workflows.</li>
+              <li>Reusable automation scripts for provisioning, backup management, and cloud deployment.</li>
+            </ul>
+            <div class="work-meta"><span>Tech: Linux, Bash, Docker, Git, GitHub Actions, AWS, Nginx, CI/CD</span></div>
+            <a href="#" class="btn btn-outline btn-sm">View Project →</a>
+          </article>
+          <article class="work-card reveal">
+            <div class="work-top"><span class="work-tag">Full Stack</span><span class="work-tag">Individual</span></div>
+            <h3>Microservice Task Management Platform</h3>
+            <p>Full-stack task management platform with secure REST APIs, role-based authentication, and responsive UI using Spring Boot and React.</p>
+            <ul class="work-list">
+              <li>Scalable backend services with MySQL, CRUD operations, API validation, and optimized queries.</li>
+              <li>Containerized with Docker; GitHub Actions for automated CI/CD deployment.</li>
+            </ul>
+            <div class="work-meta"><span>Tech: Java, Spring Boot, React.js, MySQL, Docker, REST API, JWT, AWS</span></div>
+            <a href="#" class="btn btn-outline btn-sm">View Project →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="journey" class="section journey">
+      <div class="container">
+        <p class="eyebrow reveal">My Journey</p>
+        <h2 class="section-title reveal">Experience &amp; <span class="gradient-text">Education</span></h2>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <span class="tl-period">Apr 2025 — Jun 2025 · Remote</span>
+            <h3>Angular Web Development Intern — Infosys</h3>
+            <p>Led end-to-end development of a scalable web application, building modular UI components and integrating RESTful APIs. Optimized performance with caching and efficient data handling, reducing load time by 40%+ and cutting redundant server calls by 60%.</p>
+          </div>
+          <div class="timeline-item reveal">
+            <span class="tl-period">2024 — Present</span>
+            <h3>Hackathons &amp; Projects</h3>
+            <p>Building innovative software solutions through national-level hackathons and real-world projects while strengthening problem-solving and teamwork skills.</p>
+          </div>
+          <div class="timeline-item reveal">
+            <span class="tl-period">2023 — Present</span>
+            <h3>DevOps &amp; Cloud Learning Path</h3>
+            <p>Actively learning Docker, AWS (EC2, S3, IAM), GitHub Actions, Jenkins, and CI/CD while building deployment-ready projects and preparing for Software Engineer and DevOps roles.</p>
+          </div>
+        </div>
+
+        <div class="edu-grid">
+          <div class="edu-card reveal">
+            <span class="edu-period">2023 — 2027</span>
+            <h3>B.Tech — Artificial Intelligence &amp; Data Science</h3>
+            <p>Dhirajlal Gandhi College of Technology, Salem, India</p>
+            <span class="edu-score">CGPA 8.0/10</span>
+          </div>
+          <div class="edu-card reveal">
+            <span class="edu-period">2021 — 2023</span>
+            <h3>Higher Secondary (11th &amp; 12th)</h3>
+            <p>Mathematics • Computer Science — Bharathi Vidhyalaya School</p>
+            <span class="edu-score">Per 75%</span>
+          </div>
+          <div class="edu-card reveal">
+            <span class="edu-period">Certifications</span>
+            <h3>Full Stack · ML · Data Visualization</h3>
+            <p>Earned certifications in Full Stack Development, Machine Learning, and Data Visualization, strengthening technical and analytical skills.</p>
+          </div>
+          <div class="edu-card reveal">
+            <span class="edu-period">Hackathons</span>
+            <h3>National-Level Hackathons</h3>
+            <p>Participated in national-level hackathons, delivering innovative solutions under tight deadlines with strong teamwork.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <p class="eyebrow reveal">Contact Us</p>
+        <h2 class="section-title reveal">Let's build something <span class="gradient-text">great</span></h2>
+        <div class="contact-grid">
+          <div class="contact-card reveal">
+            <h3>Location</h3>
+            <p>Salem — 636 003, Tamil Nadu, India</p>
+            <a href="https://www.google.com/maps" target="_blank" rel="noopener">View on Map →</a>
+          </div>
+          <div class="contact-card reveal">
+            <h3>Email</h3>
+            <p>svigneshvicky229@gmail.com</p>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=svigneshvicky229@gmail.com&su=Thank%20You%20for%20Visiting%20My%20Portfolio&body=Hello%2C%0D%0A%0D%0AThank%20you%20for%20taking%20the%20time%20to%20visit%20my%20portfolio%20and%20learn%20more%20about%20my%20work.%20I%20truly%20appreciate%20your%20interest.%0D%0A%0D%0AIf%20you%20believe%20my%20skills%20and%20projects%20align%20with%20your%20team%27s%20requirements%2C%20I%20would%20be%20excited%20to%20discuss%20how%20I%20can%20contribute%20as%20a%20Software%20Engineer%2C%20Full%20Stack%20Developer%2C%20or%20DevOps%20Engineer.%0D%0A%0D%0AThank%20you%20once%20again%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20connecting%20with%20you.%0D%0A%0D%0ABest%20regards%2C%0D%0AVignesh%20S" target="_blank" rel="noopener">Send Email →</a>
+          </div>
+          <div class="contact-card reveal">
+            <h3>Phone</h3>
+            <p>(+91) 8248556097</p>
+            <a href="tel:+918248556097">Call Now →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button id="scrollArrow" class="scroll-arrow" aria-label="Scroll">
+    <svg id="arrowUp" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    <svg id="arrowDown" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+  </button>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#hero" class="brand"><span class="brand-dot"></span> Vignesh<span class="brand-accent">.S</span></a>
+      <p>Software Engineer & DevOps Enthusiast</p>
+      <p>© 2026 All Rights Reserved by Vignesh S</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

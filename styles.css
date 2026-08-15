@@ -551,6 +551,7 @@ body a, body button, body .chip, body .social-btn, body .theme-toggle, body .men
 
 /* ---------- Works / Projects ---------- */
 .works-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 26px; }
+.works-more { text-align: center; margin-top: 46px; }
 .work-card {
   background: var(--card);
   border: 1px solid var(--border);

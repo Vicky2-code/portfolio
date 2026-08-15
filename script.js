@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   /* ---------- Cursor trail (dots + lines) ---------- */
   const trailCanvas = document.getElementById('cursorTrail');
+  if (trailCanvas) {
   const ctx = trailCanvas.getContext('2d');
   let trailW, trailH, dpr;
   function resizeTrail() {
@@ -104,6 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
     requestAnimationFrame(drawTrail);
   }
   drawTrail();
+  }
 
   /* ---------- Theme toggle ---------- */
   const themeToggle = document.getElementById('themeToggle');
@@ -134,7 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (charIndex < 0) { deleting = false; roleIndex = (roleIndex + 1) % roles.length; return setTimeout(type, 400); }
     return setTimeout(type, 45);
   }
-  type();
+  if (typedEl) type();
 
   /* ---------- Reveal on scroll ---------- */
   const reveals = document.querySelectorAll('.reveal');

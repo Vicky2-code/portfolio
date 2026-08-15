@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Projects — Vignesh S</title>
+  <meta name="description" content="All projects by Vignesh S, Software Engineering and DevOps enthusiast." />
+  <link rel="icon" type="image/png" href="assets/profile.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-dot"></span> Vignesh<span class="brand-accent">.S</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About Me</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#journey">Experience</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+          <span class="icon-sun">☀</span>
+          <span class="icon-moon">☾</span>
+        </button>
+      </div>
+      <button id="menuToggle" class="menu-toggle" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="projects" class="section works">
+      <div class="container">
+        <p class="eyebrow reveal">Featured Work</p>
+        <h2 class="section-title reveal">All <span class="gradient-text">Projects</span></h2>
+        <div class="works-grid">
+          <article class="work-card reveal">
+            <div class="work-top"><span class="work-tag">DevOps</span><span class="work-tag">Individual</span></div>
+            <h3>DevOps Cloud Automation Platform</h3>
+            <p>DevOps automation platform to streamline application setup, deployment, and infrastructure management using Linux shell scripting and Docker.</p>
+            <ul class="work-list">
+              <li>CI/CD pipelines with GitHub Actions automating build, test, and deployment workflows.</li>
+              <li>Reusable automation scripts for provisioning, backup management, and cloud deployment.</li>
+            </ul>
+            <div class="work-meta"><span>Tech: Linux, Bash, Docker, Git, GitHub Actions, AWS, Nginx, CI/CD</span></div>
+            <a href="#" class="btn btn-outline btn-sm">View Project →</a>
+          </article>
+          <article class="work-card reveal">
+            <div class="work-top"><span class="work-tag">Full Stack</span><span class="work-tag">Individual</span></div>
+            <h3>Microservice Task Management Platform</h3>
+            <p>Full-stack task management platform with secure REST APIs, role-based authentication, and responsive UI using Spring Boot and React.</p>
+            <ul class="work-list">
+              <li>Scalable backend services with MySQL, CRUD operations, API validation, and optimized queries.</li>
+              <li>Containerized with Docker; GitHub Actions for automated CI/CD deployment.</li>
+            </ul>
+            <div class="work-meta"><span>Tech: Java, Spring Boot, React.js, MySQL, Docker, REST API, JWT, AWS</span></div>
+            <a href="#" class="btn btn-outline btn-sm">View Project →</a>
+          </article>
+          <article class="work-card reveal">
+            <div class="work-top"><span class="work-tag">Full Stack</span><span class="work-tag">Internship</span></div>
+            <h3>CleanStreet — Civic Issue Reporting Platform</h3>
+            <p>Full-stack civic issue reporting and tracking application built during the Infosys Springboard internship, connecting citizens and authorities to manage urban cleanliness services.</p>
+            <ul class="work-list">
+              <li>Secure REST APIs with JWT authentication and role-based access for citizens and admins.</li>
+              <li>Express.js + MongoDB backend with a responsive React frontend for reporting and tracking issues.</li>
+            </ul>
+            <div class="work-meta"><span>Tech: Node.js, Express.js, React.js, MongoDB, REST API, JWT</span></div>
+            <a href="https://github.com/Vicky2-code/CleanStreet-Infosys-Project" target="_blank" rel="noopener" class="btn btn-outline btn-sm">View Project on GitHub →</a>
+          </article>
+        </div>
+
+        <div class="works-more reveal">
+          <a href="index.html#projects" class="btn btn-outline">← Back to Projects</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button id="scrollArrow" class="scroll-arrow" aria-label="Scroll">
+    <svg id="arrowUp" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    <svg id="arrowDown" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+  </button>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="index.html" class="brand"><span class="brand-dot"></span> Vignesh<span class="brand-accent">.S</span></a>
+      <p>Software Engineer & DevOps Enthusiast</p>
+      <p>© 2026 All Rights Reserved by Vignesh S</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

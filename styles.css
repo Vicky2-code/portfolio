@@ -575,6 +575,7 @@ body a, body button, body .chip, body .social-btn, body .theme-toggle, body .men
 }
 .work-card h3 { font-family: var(--font-head); font-size: 1.45rem; }
 .work-card p { color: var(--muted); font-size: 0.96rem; }
+.work-actions { display: flex; align-items: center; gap: 10px; margin-top: auto; }
 .work-list { list-style: none; display: flex; flex-direction: column; gap: 8px; flex: 1; }
 .work-list li {
   color: var(--muted);
